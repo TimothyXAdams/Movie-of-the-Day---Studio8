@@ -1,8 +1,5 @@
-from flask import Flask, request, redirect, render_template, session, flash
-from flask_sqlalchemy import SQLAlchemy
-import cgi
-
-
+from models.py import User, Movie
+from app.py import app, db
 # a list of movie names that nobody should have to watch
 terrible_movies = [
     "Gigli",
